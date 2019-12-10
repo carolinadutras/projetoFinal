@@ -29,6 +29,12 @@ main{
 .escolhaMercado{
     display: none;
 }
+
+.vejaPreco{
+    display: none;
+
+}
+
 .separa{
     height: 30px;
 }
