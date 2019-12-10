@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>ToDoShop</title>
+  </head>
+  <body>
+    <nav></nav>
+    <main>
+      <form class="insiraItem" id="insiraItem">
+        <div class="titulo">
+          <h1>Faça sua lista de compras</h1>
+        </div>
+
+        <input
+          type="text"
+          id="inputItem"
+          class="inputItem"
+          placeholder="Adicione um item"
+        />
+        <label for="priority"> </label>
+        <button id="btnAdd" class="btnAdd">ADD</button>
+      </form>
+      <div class="divErro"></div>
+
+      <ul id="toDo" class="toDo"></ul>
+
+      <div class="allBtn">
+        <button class="btnNext" onclick="myFunction()">Próxima etapa</button>
+      </div>
+      <div class="separa"></div>
+      <div class="escolhaMercado" id="myDIV">
+        <div class="container ">
+          <div class="titulo">
+            <h1>Escolha o supermercado</h1>
+          </div>
+
+          <div class="allBtn">
+            <button class="btnNext" id="btnNext" onclick="escolhaMercado()">
+              Próxima etapa
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="separa"></div>
+
+      <content>
+        <div class="container">
+          <div class="titulo">
+            <h1>Veja onde seu carrinho ficou mais barato</h1>
+          </div>
+          <div class="allBtn">
+            <button class="btnNext" id="btnNext" onclick="escolhaMercado()">
+              Próxima etapa
+            </button>
+          </div>
+        </div>
+      </content>
+    </main>
+
+    <script src="./javaScript/script.js"></script>
+    <script src="./javaScript/mercado.js"></script>
+  </body>
+</html>

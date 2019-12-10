@@ -1,0 +1,263 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-image: linear-gradient(to right, #f8bca5, #a5e1f8);
+    /* display: block */
+
+}
+main{    
+    background-color: #ffffff;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;        
+}
+
+
+/* content{
+    background-color: #ffffff;
+    width: 90%;
+    height: 150px;
+    margin: 0 auto;   
+} */
+
+.container{
+    background-color: #ffffff;
+    width: 50%;
+    height: 150px;
+    margin: 0 auto;   
+}
+
+.escolhaMercado{
+    display: none;
+}
+.separa{
+    height: 30px;
+}
+
+.titulo{    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo h1{    
+    font-size: 16px;
+}
+
+
+/* ------Botões------- */
+
+.btnAdd{
+    background-color: #f8bca5;
+    font-weight: bold;
+    border: none;
+    align-content: center;
+    justify-content: center;
+    width: 50%;
+    border-radius: 4px;   
+    height: 40px;
+    color: #ffffff;
+}
+
+.btnNext{
+    background-color: #f8bca5;
+    font-weight: bold;
+    border: none;
+    align-content: center;
+    justify-content: center;
+    width: 50%;
+    border-radius: 4px;   
+    height: 40px;
+    color: #ffffff;
+}
+
+
+/* .priority{
+    border: none;
+    background-color: #ffffff;
+    height: 40px;
+    display: flex;
+    min-width: 50px;
+    
+
+
+} */
+
+.allToDo{
+    display: flex
+}
+
+
+
+.erro{
+    font-size: 16px;
+    background-color: pink;
+    padding: 15px 5px;
+    border-radius: 5px;
+    border-color: red;
+    color:red;
+    text-align: center;
+    justify-content: center;    
+}
+
+.inputItem{
+    border: none;
+    background-color: #ffffff;
+    width: 100%;
+    border-radius: 2px;   
+    height: 60px;
+    display: flex
+}
+
+.textoItem{
+    min-width:40px;
+
+}
+
+.itemLista {
+background-color: #ffffff;
+/* border-bottom: 1px solid grey;  */
+min-height: 50px;
+display: flex;
+justify-content: space-between;
+
+}
+
+.item p{
+    background-color: #ffffff;
+    min-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    
+    }
+
+.checkItem{    
+text-decoration: line-through;
+}
+
+.checkTodos{
+    text-decoration: line-through;
+}
+
+.botaoX{
+   display: flex;
+   border: none;
+   background-color: white;
+   width: 40px;
+    
+}
+
+.allBtn{
+    display: flex;  
+    border: none;
+}
+
+
+.btnDelete {
+    background-color: #f87a7a;
+    font-weight: bold;
+    border: none;
+    width: 60%;
+    height: 40px;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+.btnSelect {
+    background-color: #8ff87a;
+    font-weight: bold;
+    border: none;
+    width: 60%;
+    height: 40px;
+    color: #ffffff;   
+    border-radius: 5px;      
+}
+
+.btnDeleteRiscado{
+    background-color: #6a71d8;
+    font-weight: bold;
+    border: none;
+    width: 60%;       
+    height: 40px;
+    color: #ffffff;
+    border-radius: 5px; 
+}
+
+
+
+.containt ul{
+    padding: inherit;
+}
+
+
+
+
+     /*** MEDIA QUERIES ***/ 
+
+@media (min-width: 375px) {
+    main{            
+
+         width:75%;         
+
+    } 
+}
+
+
+@media (min-width: 425px) {
+    main{
+       width: 65%;
+    }
+
+    .titulo h1 {
+        font-size: 12px;
+    }
+
+    .inputItem{
+        font-size: 15px
+    }
+    
+    
+    .btnSelect {
+        font-size: 16px;
+    }
+
+    .btnDelete{
+        font-size: 16px;
+    }
+
+    .erro{
+        font-size: 18px
+    }
+
+    .item{
+        font-size: 18px;  
+    }    
+}
+
+
+    @media (min-width: 768px) {
+        
+        main{
+
+            width: 50%;
+
+        }
+
+        .titulo h1 {
+            font-size: 24px;           
+        }
+
+        .inputItem {
+            font-size: 21px;
+
+                    }
+
+        .btnAdd {
+            font-size: 17px
+        }    
+                
+    }
+
+
+
+
+
