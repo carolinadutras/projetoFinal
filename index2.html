@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/bootstrap.min.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">ToDoShop</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarColor02">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item ">
+                      <a class="nav-link" href="#">O QUE EU SOU<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">O QUE EU FAÇO</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">EXPERIMENTE!</a>
+                    </li>
+
+                  </ul>
+                </div>
+              </nav>
+              <header class="container mt-5">
+                  <h2>O QUE EU SOU</h2>
+                  <p>
+                    Sempre queremos economizar nas despezas certo? 
+                    No supermercado não seria diferente.
+                     Hoje em dia ninguem tem mais tempo para consultar folhetos de mercado e comparar promoções.
+                     Mas agora com a ToDoShop as coisas mudaram!
+                  </p>
+
+              </header>
+              <section class="container mt-5">
+                  <h2>O QUE EU FAÇO</h2>
+                  <p>
+                     ToDoShop é a sua mais nova lista de compras, simples e fácil de usar:
+                  
+                  <ul>
+                    <li>
+                      Escreva os itens que quer comparar
+
+                    </li>
+
+                    <li>
+                      Escolha em quais supermercados quer orçar sua lista de compras
+                    </li>
+
+                      <li>
+                        No final você consegue ver aonde seu carrinho ficará mais barato
+                      </li>
+                  </ul>
+                 
+                 
+                  </p>
+
+              </section>
+
+    <main class="container mt-5">
+      <form class="insiraItem" id="insiraItem">
+        <div class="titulo">
+          <h3 class="text- center mb-3">Faça sua lista de compras</h3>
+        </div>
+
+        <input
+          type="text"
+          id="inputItem"          
+          class="inputItem"
+ 
+          placeholder="Adicione um item"
+        />
+
+        <label for="priority"></label>
+        <button id="btnAdd" class="btnAdd">ADD</button>
+      </form>
+
+      <div id='match-list'></div> 
+
+      <div class="divErro"></div>
+
+      <ul id="toDo" class="toDo"></ul>
+
+      <div class="allBtn">
+        <button class="btnNext" onclick="mostraMercado()">Próxima etapa</button>
+      </div>
+
+      <div class="separa"></div>
+
+      <div class="escolhaMercado" id="mostraDiv">
+        <div class="container ">
+          <div class="titulo">
+            <h3>Escolha o supermercado</h3>
+          </div>
+        </div>
+        <div class="allBtn">
+          <button class="btnNext" onclick="myFunction()">Próxima etapa</button>
+        </div>
+      </div>
+
+      <div class="separa"></div>
+
+      <div class="container vejaPreco" id="mostraPreco">
+        <div class="titulo">
+          <h3>Veja onde seu carrinho ficou mais barato</h3>
+        </div>
+      </div>
+
+
+    </main>
+
+    <script src="./javaScript/script.js"></script>
+    <script src="./javaScript/mercado.js"></script>
+    <script src="./javaScript/index.js"></script>
+  </body>
+</html>
