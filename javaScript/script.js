@@ -5,6 +5,11 @@ const toDo = document.getElementById('toDo');// ul onde vou deixar todas minhas 
 const btnAdd = document.getElementById('btnAdd')
 const btnNext = document.getElementById('btnNext')
 
+
+
+const mercados = document.getElementById('mercados')
+const btnNext2 = document.getElementById('btnNext2')
+
 // const btnNext1 = document.getElementById('btnNext1')
 
 // -no botão add inserir um event listener para o click
@@ -62,9 +67,6 @@ formulario.addEventListener('submit', function(evento){
             console.log(btnNext.classList);
             btnNext.classList.remove('btnNext_hide')
             btnNext.classList.add('btn-dark')
-            
-            
-
         }
 
 
@@ -84,8 +86,6 @@ formulario.addEventListener('submit', function(evento){
         
         listaMercado.textContent = item;    
         listaMercado.classList.add('textoItem')
-
-
         // listaMercado.addEventListener('click', function(){
 
         //     if(listaMercado.classList.contains('checkItem')){
@@ -99,7 +99,9 @@ formulario.addEventListener('submit', function(evento){
             divFilha.remove()         
         })
 
-
+        mercados.addEventListener('click', function(){
+            btnNext2.classList.add('btn-dark')
+        })
 
         // toDo.addEventListener('dragstart', function(evento) {
         //     dragging = evento.target.closest('.itemLista');
@@ -112,9 +114,6 @@ formulario.addEventListener('submit', function(evento){
         //     this.insertBefore(dragging, node)
         //     console.log(divFilha)
         // })
-
-
-
         
         // toDo.addEventListener('dragend', function(evento){
             
