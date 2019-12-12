@@ -34,6 +34,7 @@ request.onreadystatechange = function(response) {
 input.placeholder = "Loading options...";
 
 // Set up and make the request.
+//URL is my Apache HTTP path. Pending configuration.
 request.open("GET","http://127.0.0.1:8080/listaMercado2.json",true);
 
 request.send();
