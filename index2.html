@@ -23,30 +23,30 @@
                 <div class="collapse navbar-collapse" id="navbarColor02">
                   <ul class="navbar-nav mr-auto">
                     <li class="nav-item ">
-                      <a class="nav-link" href="#">O QUE EU SOU<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#sou">O QUE EU SOU<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">O QUE EU FAÇO</a>
+                        <a class="nav-link" href="#faco">O QUE EU FAÇO</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">EXPERIMENTE!</a>
+                        <a class="nav-link" href="#experimente">EXPERIMENTE!</a>
                     </li>
 
                   </ul>
                 </div>
               </nav>
               <header class="container mt-5">
-                  <h2>O QUE EU SOU</h2>
+                  <h2 id="sou">O QUE EU SOU</h2>
                   <p>
-                    Sempre queremos economizar nas despezas certo? 
+                    Sempre queremos economizar nas despezas certo? <br>
                     No supermercado não seria diferente.
-                     Hoje em dia ninguem tem mais tempo para consultar folhetos de mercado e comparar promoções.
+                     Hoje em dia ninguem tem mais tempo para consultar folhetos de mercado e comparar promoções. <br>
                      Mas agora com a ToDoShop as coisas mudaram!
                   </p>
 
               </header>
               <section class="container mt-5">
-                  <h2>O QUE EU FAÇO</h2>
+                  <h2 class="faco">O QUE EU FAÇO</h2>
                   <p>
                      ToDoShop é a sua mais nova lista de compras, simples e fácil de usar:
                   
@@ -61,7 +61,7 @@
                     </li>
 
                       <li>
-                        No final você consegue ver aonde seu carrinho ficará mais barato
+                        No final você consegue ver o preço e aonde seu carrinho ficará mais barato
                       </li>
                   </ul>
                  
@@ -73,7 +73,7 @@
     <main class="container mt-5">
       <form class="insiraItem" id="insiraItem">
         <div class="titulo">
-          <h3 class="text- center mb-3">Faça sua lista de compras</h3>
+            <h3 class="text- center mb-3" id="experimente">Faça sua lista de compras</h3>
         </div>
 
         <label for="ajax">Selecione um produto</label>
@@ -88,10 +88,10 @@
 
       <div class="divErro"></div>
 
-      <ul id="toDo" class="toDo"></ul>
+      <ul id="toDo" class="toDo d-flex align-items-center"></ul>
 
       <div class="allBtn">
-        <button class="btnNext" onclick="mostraMercado()">Próxima etapa</button>
+        <button class="btnNext btn btn-primary" onclick="mostraMercado()">Próxima etapa</button>
       </div>
 
       <div class="separa"></div>
@@ -103,7 +103,7 @@
           </div>
         </div>
         <div class="allBtn">
-          <button class="btnNext" onclick="myFunction()">Próxima etapa</button>
+          <button class="btnNext btn btn-primary" onclick="myFunction()">Próxima etapa</button>
         </div>
       </div>
 
