@@ -1,26 +1,26 @@
 body{
-    font-family: 'Open Sans', sans-serif;
-    background-image: linear-gradient(to right, #f8bca5, #a5e1f8);
+    /* font-family: 'Open Sans', sans-serif;
+    background-image: linear-gradient(to right, #f8bca5, #a5e1f8); */
     /* display: block */
     font-size: 12px;
 
 }
 main{    
-    background-color: #ffffff;
+    /* background-color: #ffffff;
     width: 90%;
     height: 100%;
-    margin: 0 auto;        
+    margin: 0 auto;         */
 }
 
 
 img .logo {
-    height: 70px;
+    /* height: 70px; */
    
 }
 
 .experimente{
 
-    min-height: 150px;
+    /* min-height: 150px; */
 }
 
 
@@ -32,7 +32,7 @@ img .logo {
 }
 
 .faca__lista{
-    height: 300px;
+    /* height: 300px; */
 }
 
 .escolhaMercado{
@@ -45,24 +45,24 @@ img .logo {
 }
 
 .separa{
-    height: 30px;
+    /* height: 30px; */
 }
 
 .titulo{    
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
 
 .titulo h1{    
-    font-size: 16px;
+    /* font-size: 16px; */
 }
 
 
 /* ------Botões------- */
 
 .btnAdd{
-    background-color: #f8bca5;
+    /* background-color: #f8bca5;
     font-weight: bold;
     border: none;
     align-content: center;
@@ -70,11 +70,11 @@ img .logo {
     width: 50%;
     border-radius: 4px;   
     height: 40px;
-    color: #ffffff;
+    color: #ffffff; */
 }
 
 .btnNext{
-    background-color: #f8bca5;
+    /* background-color: #f8bca5;
     font-weight: bold;
     border: none;
     align-content: center;
@@ -82,9 +82,13 @@ img .logo {
     width: 50%;
     border-radius: 4px;   
     height: 40px;
-    color: #ffffff;
+    color: #ffffff; */
 }
 
+.btnNext_hide{
+
+    opacity: 0;
+}
 
 /* .priority{
     border: none;
@@ -98,12 +102,12 @@ img .logo {
 } */
 
 .allToDo{
-    display: flex
+    /* display: flex */
 }
 
 
 
-.erro{
+/* .erro{
     font-size: 16px;
     background-color: pink;
     padding: 15px 5px;
@@ -112,92 +116,59 @@ img .logo {
     color:red;
     text-align: center;
     justify-content: center;    
-}
+} */
 
-.inputItem{
+/* .inputItem{
     border: none;
     background-color: #ffffff;
     width: 100%;
     border-radius: 2px;   
     height: 60px;
     display: flex
-}
+} */
 
-.textoItem{
+/* .textoItem{
     min-width:40px;
 
-}
+} */
 
-.itemLista {
-background-color: #ffffff;
+/* .itemLista {
+background-color: #ffffff; */
 /* border-bottom: 1px solid grey;  */
-min-height: 50px;
+/* min-height: 50px;
 display: flex;
 justify-content: space-between;
 
-}
+} */
 
-.item p{
+/* .item p{
     background-color: #ffffff;
     min-height: 50px;
     display: flex;
     justify-content: space-between;
     
-    }
+    } */
 
-.checkItem{    
+/* .checkItem{    
 text-decoration: line-through;
-}
+} */
 
-.checkTodos{
+/* .checkTodos{
     text-decoration: line-through;
-}
+} */
 
-.botaoX{
-   /* display: flex; */
+/* .botaoX{
+
    border: none;
    background-color: white;
    width: 40px;
     
-}
+} */
 
 .allBtn{
-    display: flex;  
-    border: none;
+    /* display: flex;  
+    border: none; */
 }
-
-
-.btnDelete {
-    background-color: #f87a7a;
-    font-weight: bold;
-    border: none;
-    width: 60%;
-    height: 40px;
-    color: #ffffff;
-    border-radius: 5px;
-}
-
-.btnSelect {
-    background-color: #8ff87a;
-    font-weight: bold;
-    border: none;
-    width: 60%;
-    height: 40px;
-    color: #ffffff;   
-    border-radius: 5px;      
-}
-
-.btnDeleteRiscado{
-    background-color: #6a71d8;
-    font-weight: bold;
-    border: none;
-    width: 60%;       
-    height: 40px;
-    color: #ffffff;
-    border-radius: 5px; 
-}
-
-
 
 .containt ul{
     padding: inherit;
@@ -208,7 +179,7 @@ text-decoration: line-through;
 
      /*** MEDIA QUERIES ***/ 
 
-@media (min-width: 375px) {
+/* @media (min-width: 375px) {
     main{            
 
          width:75%;         
@@ -271,4 +242,4 @@ text-decoration: line-through;
         }    
                 
     }
-
+ */

@@ -2,11 +2,19 @@
 const formulario = document.getElementById ('insiraItem');
 const inputItem = document.getElementById('inputItem');
 const toDo = document.getElementById('toDo');// ul onde vou deixar todas minhas tarefas
+const btnAdd = document.getElementById('btnAdd')
+const btnNext = document.getElementById('btnNext')
 
 // -no botão add inserir um event listener para o click
 
 let divErro = document.querySelector('.divErro');
 let erro = document.createElement('p');
+
+btnAdd.addEventListener("click", function(){
+    if(inputItem.value.trim() === ''){
+        
+    }
+})
 
 // construir um botão proxima etapa que envia para uma section que contém a segunda etapa com as ex
 
@@ -23,6 +31,7 @@ formulario.addEventListener('submit', function(evento){
         erro.textContent = 'insira um item!';
         erro.classList.add('erro');
         divErro.appendChild(erro);
+        
     }else{
         erro.textContent='';
         // erro.remove('erro')
@@ -39,11 +48,27 @@ formulario.addEventListener('submit', function(evento){
         listaMercado.addEventListener('dblclick', function(){
             listaMercado.classList.remove('')            
             listaMercado.setAttribute('contentEditable', true)
+
         })
+
+        if (toDo.childElementCount === 0){
+            btnNext.classList.add('btnNext_hide')
+
+            console.log('feijoada');
+            
+        } else {
+            console.log(btnNext.classList);
+            btnNext.classList.remove('btnNext_hide')
+            btnNext.classList.add('btn-dark')
+            
+            
+
+        }
+
     
         let botaoX = document.createElement('button')
         divFilha.appendChild(botaoX);        
-        botaoX.setAttribute('class', 'botaoX btn-outline-secondary align-items-end')
+        botaoX.setAttribute('class', 'botaoX btn-outline-secondary')
         botaoX.textContent = 'X'
     
         toDo.setAttribute('draggable','true');
@@ -55,35 +80,41 @@ formulario.addEventListener('submit', function(evento){
         listaMercado.classList.add('textoItem')
 
 
-        listaMercado.addEventListener('click', function(){
+        // listaMercado.addEventListener('click', function(){
 
-            if(listaMercado.classList.contains('checkItem')){
-                listaMercado.classList.remove('checkItem');
-            }else{
-            listaMercado.classList.add('checkItem');
-            }
-        })
+        //     if(listaMercado.classList.contains('checkItem')){
+        //         listaMercado.classList.remove('checkItem');
+        //     }else{
+        //     listaMercado.classList.add('checkItem');
+        //     }
+        // })
         
         botaoX.addEventListener('click', function(){
             divFilha.remove()         
         })
 
-        toDo.addEventListener('dragstart', function(evento) {
-            dragging = evento.target.closest('.itemLista');
-            console.log(divFilha)
-        })
+
+
+        // toDo.addEventListener('dragstart', function(evento) {
+        //     dragging = evento.target.closest('.itemLista');
+        //     console.log(divFilha)
+        // })
         
-        toDo.addEventListener('dragover', function(evento) {
-            evento.preventDefault();
-            const node = evento.target.closest('.itemLista')
-            this.insertBefore(dragging, node)
-            console.log(divFilha)
-        })
+        // toDo.addEventListener('dragover', function(evento) {
+        //     evento.preventDefault();
+        //     const node = evento.target.closest('.itemLista')
+        //     this.insertBefore(dragging, node)
+        //     console.log(divFilha)
+        // })
+
+
+
         
-        toDo.addEventListener('dragend', function(evento){
+        // toDo.addEventListener('dragend', function(evento){
             
-            dragging = null
-        })   
+        //     dragging = null
+        // })   
+
         formulario.reset();
     }
 })
