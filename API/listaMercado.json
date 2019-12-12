@@ -1,3 +1,11 @@
-[{"descricao": "arroz camil tipo ii ",
-"peso": "5 kg",
-"preco": 10.50}]
+[{"id": "1",
+"descricao": "Arroz"},
+{"id": "2",
+"descricao": "Feijão"},
+{"id": "3",
+"descricao": "Macarrão"},
+{"id": "4",
+"descricao": "Atum"},
+{"id": "5",
+"descricao": "Baunilha"}
+]
