@@ -23,30 +23,30 @@
                 <div class="collapse navbar-collapse" id="navbarColor02">
                   <ul class="navbar-nav mr-auto">
                     <li class="nav-item ">
-                      <a class="nav-link" href="#sou">O QUE EU SOU<span class="sr-only">(current)</span></a>
+                      <a class="nav-link" href="#">O QUE EU SOU<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#faco">O QUE EU FAÇO</a>
+                      <a class="nav-link" href="#">O QUE EU FAÇO</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#experimente">EXPERIMENTE!</a>
+                      <a class="nav-link" href="#">EXPERIMENTE!</a>
                     </li>
 
                   </ul>
                 </div>
               </nav>
               <header class="container mt-5">
-                  <h2 id="sou">O QUE EU SOU</h2>
+                  <h2>O QUE EU SOU</h2>
                   <p>
-                    Sempre queremos economizar nas despezas certo? </br>
+                    Sempre queremos economizar nas despezas certo? 
                     No supermercado não seria diferente.
-                     Hoje em dia ninguem tem mais tempo para consultar folhetos de mercado e comparar promoções.<br>
+                     Hoje em dia ninguem tem mais tempo para consultar folhetos de mercado e comparar promoções.
                      Mas agora com a ToDoShop as coisas mudaram!
                   </p>
 
               </header>
               <section class="container mt-5">
-                  <h2 class="faco">O QUE EU FAÇO</h2>
+                  <h2>O QUE EU FAÇO</h2>
                   <p>
                      ToDoShop é a sua mais nova lista de compras, simples e fácil de usar:
                   
@@ -61,7 +61,7 @@
                     </li>
 
                       <li>
-                        No final você consegue ver o preço e aonde seu carrinho ficará mais barato
+                        No final você consegue ver aonde seu carrinho ficará mais barato
                       </li>
                   </ul>
                  
@@ -73,31 +73,26 @@
     <main class="container mt-5">
       <form class="insiraItem" id="insiraItem">
         <div class="titulo">
-          <h3 class="text- center mb-3" id="experimente">Faça sua lista de compras</h3>
+          <h3 class="text- center mb-3">Faça sua lista de compras</h3>
         </div>
 
-        <input
-          type="text"
-          id="inputItem"          
-          class="inputItem form-control"
- 
-          placeholder="Adicione um item"
-        />
+        <label for="ajax">Selecione um produto</label>
+        <input type="text" id="ajax" list="json-products" placeholder="e.g. datalist">
+        <datalist id="json-products"></datalist>
 
         <label for="priority"></label>
-        <button id="btnAdd" class="btnAdd btn btn-primary">Adicionar</button>
+        <button id="btnAdd" class="btnAdd">ADD</button>
       </form>
 
       <div id='match-list'></div> 
 
       <div class="divErro"></div>
 
-      <ul id="toDo" class="toDo d-flex align-items-center"></ul>
+      <ul id="toDo" class="toDo"></ul>
 
       <div class="allBtn">
-        <button class="btnNext btn btn-primary" onclick="mostraMercado()">Próxima etapa</button>
+        <button class="btnNext" onclick="mostraMercado()">Próxima etapa</button>
       </div>
-
 
       <div class="separa"></div>
 
@@ -105,20 +100,10 @@
         <div class="container ">
           <div class="titulo">
             <h3>Escolha o supermercado</h3>
-           
-                <label class="btn btn-primary">
-                    <input type="checkbox" autocomplete="off"> Pão de Açúcar
-                  </label>
-                  <label class="btn btn-primary">
-                      <input type="checkbox" autocomplete="off"> Carrefour
-                    </label>
-                    <label class="btn btn-primary">
-                        <input type="checkbox" autocomplete="off"> Extra
-                      </label>
-          
+          </div>
         </div>
         <div class="allBtn">
-          <button class="btnNext btn btn-primary" onclick="myFunction()">Próxima etapa</button>
+          <button class="btnNext" onclick="myFunction()">Próxima etapa</button>
         </div>
       </div>
 
@@ -136,5 +121,6 @@
     <script src="./javaScript/script.js"></script>
     <script src="./javaScript/mercado.js"></script>
     <script src="./javaScript/index.js"></script>
+    <script src="./javaScript/datalistTest.js"></script>
   </body>
 </html>

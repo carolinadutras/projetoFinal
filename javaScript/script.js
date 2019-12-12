@@ -43,7 +43,7 @@ formulario.addEventListener('submit', function(evento){
     
         let botaoX = document.createElement('button')
         divFilha.appendChild(botaoX);        
-        botaoX.setAttribute('class', 'botaoX btn-outline-secondary align-items-end')
+        botaoX.setAttribute('class', 'botaoX')
         botaoX.textContent = 'X'
     
         toDo.setAttribute('draggable','true');
