@@ -2,6 +2,7 @@ body{
     font-family: 'Open Sans', sans-serif;
     background-image: linear-gradient(to right, #f8bca5, #a5e1f8);
     /* display: block */
+    font-size: 12px;
 
 }
 main{    
@@ -12,18 +13,26 @@ main{
 }
 
 
-/* content{
-    background-color: #ffffff;
-    width: 90%;
-    height: 150px;
-    margin: 0 auto;   
-} */
+img .logo {
+    height: 70px;
+   
+}
+
+.experimente{
+
+    min-height: 150px;
+}
+
 
 .container{
     background-color: #ffffff;
     width: 50%;
     height: 150px;
     margin: 0 auto;   
+}
+
+.faca__lista{
+    height: 300px;
 }
 
 .escolhaMercado{
@@ -145,7 +154,7 @@ text-decoration: line-through;
 }
 
 .botaoX{
-   display: flex;
+   /* display: flex; */
    border: none;
    background-color: white;
    width: 40px;
@@ -262,8 +271,4 @@ text-decoration: line-through;
         }    
                 
     }
-
-
-
-
 

@@ -6,16 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
     <link rel="stylesheet" href="style/bootstrap.min.css" />
 
-    <title>Document</title>
+    <title>ToDoShop</title>
+
+
+
   </head>
   <body>
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <a class="navbar-brand" href="#">ToDoShop</a>
+
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark bg bg-primary">
+          
+            <img  class="logo" src="./assets/todoshop1.png" style= 'height:70px'/>
+          
+                <a class="navbar-brand" href="#">ToDoShop </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -23,7 +29,7 @@
                 <div class="collapse navbar-collapse" id="navbarColor02">
                   <ul class="navbar-nav mr-auto">
                     <li class="nav-item ">
-                      <a class="nav-link" href="#sou">O QUE EU SOU<span class="sr-only">(current)</span></a>
+                      <a class="nav-link" href="#sou">O QUE EU SOU</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="#faco">O QUE EU FAÇO</a>
@@ -35,20 +41,27 @@
                   </ul>
                 </div>
               </nav>
+
+
               <header class="container mt-5">
-                  <h2 id="sou">O QUE EU SOU</h2>
-                  <p>
-                    Sempre queremos economizar nas despezas certo? </br>
-                    No supermercado não seria diferente.
-                     Hoje em dia ninguem tem mais tempo para consultar folhetos de mercado e comparar promoções.<br>
-                     Mas agora com a ToDoShop as coisas mudaram!
-                  </p>
+                  <h3 id="sou ">O QUE EU SOU</h3>
+
+                  <div class="text-align">
+                    <p>
+                      Sempre queremos economizar nas despesas certo? </br>
+                      No supermercado não seria diferente.</br>
+                      Hoje em dia ninguem tem mais tempo para consultar folhetos de mercado e comparar promoções.<br>
+                      Mas agora com a ToDoShop as coisas mudaram!
+                    </p>
+                  </div>
 
               </header>
               <section class="container mt-5">
-                  <h2 class="faco">O QUE EU FAÇO</h2>
+                  <h3 class="faco">O QUE EU FAÇO</h3>
+
+                  
                   <p>
-                     ToDoShop é a sua mais nova lista de compras, simples e fácil de usar:
+                    ToDoShop é a sua mais nova lista de compras, simples e fácil de usar:
                   
                   <ul>
                     <li>
@@ -64,29 +77,48 @@
                         No final você consegue ver o preço e aonde seu carrinho ficará mais barato
                       </li>
                   </ul>
-                 
-                 
                   </p>
 
               </section>
 
-    <main class="container mt-5">
+    <main class="container mt-5 faca__lista tamanho experimente">
       <form class="insiraItem" id="insiraItem">
         <div class="titulo">
-          <h3 class="text- center mb-3" id="experimente">Faça sua lista de compras</h3>
+          <h3 class="mb-3" id="experimente">Faça sua lista de compras</h3>
         </div>
 
         <input
           type="text"
           id="inputItem"          
-          class="inputItem form-control"
+          class="inputItem"
  
-          placeholder="Adicione um item"
+          placeholder="Adicione um item na lista"
         />
 
         <label for="priority"></label>
         <button id="btnAdd" class="btnAdd btn btn-primary">Adicionar</button>
       </form>
+
+
+      <!-- <form class="insiraItem" id="insiraItem">
+        <div class="titulo">
+          <h3 class="mb-3">Faça sua lista de compras</h3>
+        </div>
+
+        <input list="products" name="product">
+        <datalist id="products">
+          <option value="Açúcar">
+          <option value="Feijão Preto">
+          <option value="Arroz">
+          <option value="Batata Doce">
+          <option value="Tapioca">
+          <option value="Azeite">
+        </datalist>
+
+
+        <label for="priority"></label>
+        <button id="btnAdd" class="btnAdd btn btn-primary">Adicionar</button>
+      </form> -->
 
       <div id='match-list'></div> 
 
@@ -98,14 +130,13 @@
         <button class="btnNext btn btn-primary" onclick="mostraMercado()">Próxima etapa</button>
       </div>
 
-
-      <div class="separa"></div>
+      <!-- <div class="separa"></div> -->
 
       <div class="escolhaMercado" id="mostraDiv">
-        <div class="container ">
+        <div >
           <div class="titulo">
             <h3>Escolha o supermercado</h3>
-           
+
                 <label class="btn btn-primary">
                     <input type="checkbox" autocomplete="off"> Pão de Açúcar
                   </label>
@@ -122,19 +153,51 @@
         </div>
       </div>
 
-      <div class="separa"></div>
+      <!-- <div class="separa"></div> -->
 
-      <div class="container vejaPreco" id="mostraPreco">
+      <div class="vejaPreco" id="mostraPreco">
         <div class="titulo">
-          <h3>Veja onde seu carrinho ficou mais barato</h3>
-        </div>
-      </div>
+          <h3>Confira onde seu carrinho ficou mais barato</h3>
 
+<div class='bg-dark content bg-primary justify-center'> 
+    <label class='row' >
+        <input type="text" autocomplete="off"> Pão de Açúcar
+    </label>
 
-    </main>
+    <label class='row'>
+        <input type="text" autocomplete="off"> EXTRA
+    </label>
+
+    <label class='row'>
+        <input type="text" autocomplete="off"> Carrefour
+    </label>
+</div>
+
+    <section class='container'>
+      <h3>NÓS LEVAMOS SUA COMPRA PARA VOCÊ!</h3>
+
+      <p>Quer ter o conforto de receber suas compras em casa?</p>
+      <h4>
+        Você pode escolher o serviço de entrega
+
+      </h4>
+      <label class="btn btn-primary">
+          <input type="checkbox" autocomplete="off"> RAPPI
+        </label>
+        <label class="btn btn-primary">
+            <input type="checkbox" autocomplete="off"> JAMMES
+          </label>
+    </section>
+
+  </main>
 
     <script src="./javaScript/script.js"></script>
     <script src="./javaScript/mercado.js"></script>
     <script src="./javaScript/index.js"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   </body>
 </html>
