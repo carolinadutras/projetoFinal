@@ -24,12 +24,12 @@ img .logo {
 }
 
 
-.container{
+/* .container{
     background-color: #ffffff;
     width: 50%;
     height: 150px;
     margin: 0 auto;   
-}
+} */
 
 .faca__lista{
     /* height: 300px; */
@@ -86,7 +86,6 @@ img .logo {
 }
 
 .btnNext_hide{
-
     opacity: 0;
 }
 

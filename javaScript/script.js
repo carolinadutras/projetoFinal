@@ -5,6 +5,8 @@ const toDo = document.getElementById('toDo');// ul onde vou deixar todas minhas 
 const btnAdd = document.getElementById('btnAdd')
 const btnNext = document.getElementById('btnNext')
 
+// const btnNext1 = document.getElementById('btnNext1')
+
 // -no botão add inserir um event listener para o click
 
 let divErro = document.querySelector('.divErro');
@@ -64,6 +66,10 @@ formulario.addEventListener('submit', function(evento){
             
 
         }
+
+
+
+
 
     
         let botaoX = document.createElement('button')
