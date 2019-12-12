@@ -1,6 +1,6 @@
 //colocar texto do input (com filtro e select) no container com as 'tarefas'
 const formulario = document.getElementById ('insiraItem');
-const inputItem = document.getElementById('inputItem');
+const inputItem = document.getElementById('ajax');
 const toDo = document.getElementById('toDo');// ul onde vou deixar todas minhas tarefas
 const btnAdd = document.getElementById('btnAdd')
 const btnNext = document.getElementById('btnNext')

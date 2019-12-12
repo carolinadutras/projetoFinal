@@ -87,7 +87,11 @@
         <h3 class="mb-3" id="experimente">Faça sua lista de compras</h3>
       </div>
 
-      <input type="text" id="inputItem" class="inputItem" placeholder="Adicione um item na lista" />
+      
+
+      <label for="ajax">Selecione um produto</label>
+        <input type="text" id="ajax" list="json-products" placeholder="e.g. datalist">
+        <datalist id="json-products"></datalist>
 
       <label for="priority"></label>
       <button id="btnAdd" class=" btnAdd btn btn-primary ">Adicionar</button>
@@ -172,6 +176,7 @@
 
   <script src="./javaScript/script.js"></script>
   <script src="./javaScript/index.js"></script>
+  <script src="./javaScript/datalistTest.js"></script>
 
 
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
