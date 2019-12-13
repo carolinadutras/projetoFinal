@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style/bootstrap.min.css" />
   <link rel="stylesheet" href="./style/style.css">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
   <title>ToDoShop</title>
 
@@ -48,11 +49,23 @@
 
     <div class="text-align">
       <p>
-        Sempre queremos economizar nas despesas certo? </br>
-        No supermercado não seria diferente.</br>
-        Hoje em dia ninguem tem mais tempo para consultar folhetos de mercado e comparar promoções.<br>
-        Mas agora com a ToDoShop as coisas mudaram!
-      </p>
+        Sempre queremos economizar nas despesas certo? </p> 
+
+       <p>
+         No supermercado não seria diferente.
+
+       </p>
+
+       <p>
+
+         Hoje em dia ninguem tem mais tempo para consultar folhetos de mercado e comparar promoções.
+       </p>
+
+       <p>
+
+         Mas agora com a ToDoShop as coisas mudaram!
+       </p>
+     
     </div>
 
   </header>
@@ -62,7 +75,6 @@
 
     <p>
       ToDoShop é a sua mais nova lista de compras, simples e fácil de usar:
-
       <ul>
         <li>
           Escreva os itens que quer comparar
@@ -83,11 +95,10 @@
 
   <main class="container mt-5 faca__lista ">
     <form class="insiraItem" id="insiraItem">
+
       <div class="titulo">
         <h3 class="mb-3" id="experimente">Faça sua lista de compras</h3>
       </div>
-
-      
 
       <label for="ajax">Selecione um produto</label>
         <input type="text" id="ajax" list="json-products" placeholder="e.g. datalist">
@@ -97,7 +108,6 @@
       <button id="btnAdd" class=" btnAdd btn btn-primary ">Adicionar</button>
     </form>
 
-
     <div id='match-list'></div>
 
     <div class="divErro"></div>
@@ -105,69 +115,49 @@
     <ul id="toDo" class="toDo "></ul>
 
     <div class="allBtn">
-      <button id='btnNext'  class="btn btnNext_hide " onclick="mostraMercado()">Próxima etapa</button>
+      <button id='btnNext'  class="btn btnNext_hide " onclick="myFunction()">Próxima etapa</button>
     </div>
 
-    <!-- <div class="separa"></div> -->
 
-     <div class="escolhaMercado" id="mostraDiv">
-
-      <div>
-
-        <div class="titulo">
-          <h3>Escolha o supermercado</h3>
-
-          <div id='mercados'></div>
-
-          <label class="btn btn-primary">
-            <input type="checkbox" autocomplete="off"> Pão de Açúcar
-          </label>
-          <label class="btn btn-primary">
-            <input type="checkbox" autocomplete="off"> Carrefour
-          </label>
-          <label class="btn btn-primary">
-            <input type="checkbox" autocomplete="off"> Extra
-          </label>
-
-        </div>
-        <div class="allBtn">
-          <button  id='btnNext2' class="btnNext btn btn-dark" onclick="myFunction()">Próxima etapa</button>
-        </div>
-      </div>
-
-      <!-- <div class="separa"></div> -->
-
-      <div class="vejaPreco" id="mostraPreco">
-        <div class="titulo">
+      <div class="vejaPreco mt-5 titulo" id="mostraPreco">
+        <!-- <div class="titulo"> -->
           <h3>Confira onde seu carrinho ficou mais barato</h3>
 
-          <div class='bg-dark  bg-primary justify-center'>
-            <label class=' content row ml-3'>
-              <input type="text" autocomplete="off" class='content'> Pão de Açúcar
-            </label>
 
-            <label class='content row ml-3'>
-              <input type="text" autocomplete="off"> EXTRA
-            </label>
+          <ul class="list-group mt-5"">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+             EXTRA
+             <!-- <i class="far fa-shopping-cart bg-dark"> 14</i> -->
+              <span class="badge badge-primary badge-pill"> R$ 14,00</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+             PÃO DE AÇÚCAR
+              <span class="badge badge-primary badge-pill">R$ 16,60</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              CARREFOUR
+              <span class="badge badge-primary badge-pill">R$ 15,70</span>
+            </li>
+          </ul>
 
-            <label class='content row ml-3'>
-              <input type="text" autocomplete="off"> Carrefour
-            </label>
-          </div>
 
-          <section class=''>
+          <section class='mt-5'>
             <h3>NÓS LEVAMOS SUA COMPRA PARA VOCÊ!</h3>
 
             <p>Quer ter o conforto de receber suas compras em casa?</p>
-            <h4>
-              Você pode escolher o serviço de entrega
 
-            </h4>
+              <h4 class='mt-5'>
+                Você pode escolher o serviço de entrega
+  
+              </h4>
+              
+            
+
             <label class="btn btn-primary">
-              <input type="checkbox" autocomplete="off"> RAPPI
+              <input type="radio" autocomplete="off"> RAPPI
             </label>
             <label class="btn btn-primary">
-              <input type="checkbox" autocomplete="off"> JAMES
+              <input type="radio" autocomplete="off"> JAMES
             </label> 
           </section>
 
