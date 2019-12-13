@@ -1,0 +1,45 @@
+
+
+main{
+    font-size: 16px; 
+    min-height: 80vh; 
+}
+
+header{
+    font-size: 16px; 
+    min-height: 80vh; 
+}
+
+section{
+    font-size: 16px; 
+    min-height: 80vh;  
+}
+
+img .logo {
+    height: 70px;
+}
+
+.escolhaMercado{
+    display: none;
+}
+
+.footer{
+    font-size: 12px;
+    color: pink;
+}
+.vejaPreco{
+    display: none;
+
+}
+
+.titulo{
+    max-width: 70%;
+}
+
+.btnNext_hide{
+    opacity: 0;
+}
+
+.containt ul{
+    padding: inherit;
+}
