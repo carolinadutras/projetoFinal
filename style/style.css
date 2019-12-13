@@ -1,5 +1,21 @@
 body{
-    font-size: 14px;
+    /* font-size: 18px; */
+}
+
+main{
+    font-size: 16px; 
+    min-height: 80vh; 
+}
+
+header{
+    font-size: 16px; 
+    min-height: 80vh; 
+
+}
+
+section{
+    font-size: 16px; 
+    min-height: 80vh;  
 }
 
 img .logo {
@@ -10,6 +26,11 @@ img .logo {
     display: none;
 }
 
+.footer{
+    position: ;
+    font-size: 12px;
+    color: pink;
+}
 .vejaPreco{
     display: none;
 
